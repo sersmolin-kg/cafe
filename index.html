@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="COFFEE TIME — уютная кофейня в Бишкеке. Авторский кофе, свежая выпечка и завтраки.">
+  <title>COFFEE TIME — кофейня в Бишкеке</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="#home" aria-label="COFFEE TIME — на главную">
+      <span class="logo-mark">☕</span>
+      <span>COFFEE <em>TIME</em><small>КОФЕЙНЯ В БИШКЕКЕ</small></span>
+    </a>
+
+    <button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="navigation">
+      <a href="#menu">Меню</a>
+      <a href="#about">О нас</a>
+      <a href="#gallery">Галерея</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+
+    <a class="button button-small header-book" href="#booking">Забронировать столик</a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <span class="eyebrow hero-eyebrow">Ваше любимое место в городе</span>
+        <h1>Уютная кофейня<br>в сердце Бишкека</h1>
+        <p>Авторский кофе, свежая выпечка и атмосфера,<br class="desktop-only"> в которую хочется возвращаться</p>
+        <div class="hero-actions">
+          <a class="button" href="#menu">Смотреть меню <span>↓</span></a>
+          <a class="button button-outline" href="#booking">Забронировать столик</a>
+        </div>
+        <div class="hero-note"><span class="status-dot"></span> Открыты сегодня · 08:00–22:00</div>
+      </div>
+      <a class="scroll-cue" href="#features" aria-label="Прокрутить вниз">↓</a>
+    </section>
+
+    <section class="features section-wrap" id="features">
+      <article class="feature">
+        <span class="feature-icon">☕</span>
+        <h3>Свежие зёрна</h3>
+        <p>Готовим кофе из свежеобжаренных зёрен</p>
+      </article>
+      <article class="feature">
+        <span class="feature-icon">🥐</span>
+        <h3>Своя выпечка</h3>
+        <p>Выпечка собственного приготовления каждый день</p>
+      </article>
+      <article class="feature">
+        <span class="feature-icon">♡</span>
+        <h3>Уютная атмосфера</h3>
+        <p>Тихое место для работы, встреч и отдыха</p>
+      </article>
+      <article class="feature">
+        <span class="feature-icon">⌁</span>
+        <h3>Всё для комфорта</h3>
+        <p>Быстрый Wi-Fi и свободные столики у окна</p>
+      </article>
+    </section>
+
+    <section class="menu-section section-wrap" id="menu">
+      <div class="section-heading">
+        <span class="eyebrow">Вкус каждого дня</span>
+        <h2>Меню</h2>
+        <p>Любимые напитки и свежие угощения — приготовлены с заботой</p>
+      </div>
+
+      <div class="menu-tabs" role="tablist" aria-label="Категории меню">
+        <button class="menu-tab active" data-category="all">Всё меню</button>
+        <button class="menu-tab" data-category="coffee">Кофе</button>
+        <button class="menu-tab" data-category="drinks">Чай и напитки</button>
+        <button class="menu-tab" data-category="desserts">Выпечка и десерты</button>
+        <button class="menu-tab" data-category="food">Завтраки</button>
+      </div>
+
+      <div class="menu-grid">
+        <article class="menu-card" data-category="coffee">
+          <img src="images/cappucino.jpg" alt="Капучино с латте-артом" loading="lazy">
+          <div class="menu-card-info"><div><h3>Капучино</h3><p>Эспрессо, молоко, нежная пенка</p></div><span>220 сом</span></div>
+        </article>
+        <article class="menu-card" data-category="coffee">
+          <img src="images/filter-coffee.jpg" alt="Фильтр-кофе" loading="lazy">
+          <div class="menu-card-info"><div><h3>Фильтр-кофе</h3><p>Чистый вкус свежеобжаренных зёрен</p></div><span>200 сом</span></div>
+        </article>
+        <article class="menu-card" data-category="drinks">
+          <img src="images/tea-lemon.jpg" alt="Чай с лимоном" loading="lazy">
+          <div class="menu-card-info"><div><h3>Чай с чабрецом</h3><p>Ароматный чай с мёдом и лимоном</p></div><span>180 сом</span></div>
+        </article>
+        <article class="menu-card" data-category="desserts">
+          <img src="images/croissant.jpg" alt="Свежий круассан" loading="lazy">
+          <div class="menu-card-info"><div><h3>Круассан</h3><p>Слоёное тесто, выпечено сегодня</p></div><span>190 сом</span></div>
+        </article>
+        <article class="menu-card" data-category="desserts">
+          <img src="images/chocolate-cake.jpg" alt="Шоколадный торт" loading="lazy">
+          <div class="menu-card-info"><div><h3>Шоколадный торт</h3><p>Насыщенный шоколад и нежный крем</p></div><span>260 сом</span></div>
+        </article>
+        <article class="menu-card" data-category="food">
+          <img src="images/egg-toast.jpg" alt="Завтрак с яйцами и тостами" loading="lazy">
+          <div class="menu-card-info"><div><h3>Завтрак кофейни</h3><p>Яйца, тосты, свежие овощи и соус</p></div><span>390 сом</span></div>
+        </article>
+        <article class="menu-card" data-category="coffee">
+          <img src="images/latte-ceramic.jpg" alt="Латте в керамической чашке" loading="lazy">
+          <div class="menu-card-info"><div><h3>Латте</h3><p>Двойной эспрессо и много молока</p></div><span>240 сом</span></div>
+        </article>
+        <article class="menu-card" data-category="food">
+          <img src="images/berry-pancake.jpg" alt="Панкейки с ягодами" loading="lazy">
+          <div class="menu-card-info"><div><h3>Панкейки с ягодами</h3><p>Пышные панкейки, сезонные ягоды</p></div><span>350 сом</span></div>
+        </article>
+      </div>
+      <p class="menu-footnote">Цены и наличие позиций могут меняться.</p>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="about-image">
+        <img src="images/warm-interior.jpg" alt="Тёплый интерьер кофейни" loading="lazy">
+        <span class="image-caption">Место, где можно замедлиться</span>
+      </div>
+      <div class="about-copy">
+        <span class="eyebrow">Немного о нас</span>
+        <h2>Кофе, уют<br>и хорошая компания</h2>
+        <p>Мы создали место, где можно замедлиться. Здесь пахнет свежим кофе, играет спокойная музыка, а за окном — жизнь Бишкека.</p>
+        <p>Загляните на чашку кофе по дороге, устройтесь с ноутбуком у окна или проведите время с близкими. Будем рады вам.</p>
+        <a class="text-link" href="#booking">Приходите в гости <span>→</span></a>
+      </div>
+    </section>
+
+    <section class="gallery-section section-wrap" id="gallery">
+      <div class="section-heading">
+        <span class="eyebrow">Загляните внутрь</span>
+        <h2>Атмосфера COFFEE TIME</h2>
+        <p>Тёплый свет, любимые вкусы и маленькие моменты для себя</p>
+      </div>
+      <div class="gallery-grid">
+        <img src="images/barrista-prepare.jpg" alt="Бариста готовит кофе" loading="lazy">
+        <img src="images/cheers.jpg" alt="Кофе и зёрна на столе" loading="lazy">
+        <img src="images/cosy-hall.jpg" alt="Уютный зал кофейни" loading="lazy">
+        <img src="images/fresh-bakery.jpg" alt="Свежая выпечка" loading="lazy">
+        <img src="images/cafe-sign.jpg" alt="Столик у окна в кафе" loading="lazy">
+        <img src="images/coffee-wooden-table.jpg" alt="Кофе на деревянном столе" loading="lazy">
+      </div>
+    </section>
+
+    <section class="booking-section" id="booking">
+      <div class="booking-inner">
+        <div class="booking-copy">
+          <span class="eyebrow">Будем ждать вас</span>
+          <h2>Забронируйте<br>столик</h2>
+          <p>Хотите забронировать столик? Напишите нам в WhatsApp — ответим за несколько минут.</p>
+          <div class="booking-contact">☎ <span href="tel:+996700000000">+996 700 000 000</span></div>
+        </div>
+
+        <form class="booking-form" id="booking-form">
+          <label>Ваше имя<input name="name" type="text" placeholder="Как к вам обращаться?" required></label>
+          <label>Телефон<input name="phone" type="tel" placeholder="+996 ..." required></label>
+          <div class="form-row">
+            <label>Дата<input name="date" type="date" required></label>
+            <label>Время<input name="time" type="time" value="18:00" required></label>
+          </div>
+          <label>Количество гостей
+            <select name="guests" required>
+              <option value="1">1 гость</option>
+              <option value="2" selected>2 гостя</option>
+              <option value="3">3 гостя</option>
+              <option value="4">4 гостя</option>
+              <option value="5+">5 и более</option>
+            </select>
+          </label>
+          <button class="button form-submit" type="submit">
+            <a
+              class="button button--small header__button"
+              href="#"
+              onclick="event.preventDefault();alert('Демонстрация ссылки Whatsapp')"
+              target="_blank"
+            >
+              Отправить заявку в WhatsApp
+            </a>
+            <span>→</span>
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <section class="contact-section section-wrap" id="contacts">
+      <div class="section-heading">
+        <span class="eyebrow">Мы рядом</span>
+        <h2>Заходите на кофе</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item"><span>⌖</span><div><h3>Адрес</h3><p>Бишкек, ул. Киевская, 100<br>Уточните адрес перед публикацией</p></div></div>
+          <div class="contact-item"><span>◷</span><div><h3>Часы работы</h3><p>Ежедневно, 08:00–22:00</p></div></div>
+          <div class="contact-item"><span>☎</span><div><h3>Телефон и WhatsApp</h3><p><span>+996 700 000 000</></p></div></div>
+          <div class="contact-item"><span>◎</span><div><h3>Instagram</h3><p><a href="https://instagram.com/" target="_blank" rel="noopener">@coffeetime.bishkek</a></p></div></div>
+        </div>
+        <div class="map">
+          <iframe
+            title="Карта центра Бишкека"
+            src="https://maps.google.com/maps?q=Bishkek%20Kyrgyzstan&t=&z=14&ie=UTF8&iwloc=&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="logo footer-logo" href="#home"><span class="logo-mark">☕</span><span>COFFEE <em>TIME</em><small>КОФЕЙНЯ В БИШКЕКЕ</small></span></a>
+    <p>Хороший кофе. Хорошее настроение.</p>
+    <span>© <span id="year"></span> COFFEE TIME</span>
+  </footer>
+
+  <a
+    class="whatsapp-float"
+    href="#"
+    target="_blank"
+    onclick="event.preventDefault();alert('Демонстрация ссылки Whatsapp')"
+    rel="noopener"
+    aria-label="Написать в WhatsApp"
+  >
+    <span>✆</span><b>Написать нам</b>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
